@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    font-size: 100%;
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+textarea{
+    z-index: 5;
+}
+
+  button {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    border-radius: 0.5rem;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    max-width: 18rem;
+    word-break: break-word;
+    word-wrap: break-word;
+    transition: all 0.5s;
+  }
+  
+  button:focus,
+  button:hover {
+    outline: none;
+  }
+  
+  button:focus::before,
+  button:hover::before {
+    box-shadow: #007bff 0 0 0 0.0625rem;
+    content: "";
+    height: calc(100% + 0.25rem);
+    left: 0;
+    margin-left: -0.25rem;
+    margin-top: -0.25rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: calc(100% + 0.25rem);
+    border-radius: inherit;
+    padding: 0.125rem;
+  }
+  
+  #submitButton {
+    margin-top: 1rem;
+  }
+  
+  #plagiarismCheckerForm {
+    margin-top: 2rem;
+  }
+  
+  #articleContentInput {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 16rem;
+    font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  #similaritySensitivityContainer {
+    margin-bottom: 1rem;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  #noResults {
+    margin: 1rem 1rem 2rem 1rem;
+  }
+
+
+.form div form textarea{
+   margin-top: 30px;
+}
+  
+  @media screen and (max-width: 1024px) {
+    body {
+      padding: 0 1rem 2rem 1rem;
+    }
+  
+    table {
+      width: 100%;
+    }
+  }

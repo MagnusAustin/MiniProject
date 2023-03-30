@@ -1,0 +1,7 @@
+multiplication table
+fibonacci
+factorial
+palindrome
+reversing a string
+searching an element from an array
+sorting of an array

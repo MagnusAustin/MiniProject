@@ -12,7 +12,7 @@ for i in range(1, 5+1):
     result *= i
 print(result)
 
-#whileloop
+#function
 def factorial(n):
     if n == 0:
         return 1

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Plagiarism Checker</h1>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <label for="file-upload">Upload files to check for plagiarism:</label>
+            <label id="drop-zone" for="file-upload">
+                <input type="file" id="file-upload" name="files[]" accept=".pdf, .docx, .jpg, .jpeg, .png, .gif, .txt" multiple>
+                <p>Drag and drop files here or click to select files</p>
+            </label>
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <p>Supported file formats: .pdf, .docx, .jpg, .jpeg, .png, .gif, .txt</p>
+            <button type="submit" id="submit-button">Check Plagiarism</button>
+        </form>
+        <div id="file-list"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Plagiarism Checker</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
